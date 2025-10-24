@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Search Interface</title>
+  <style>
+body {
+      background-color: #8c8c8c;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+    }
+
+    .searchbar {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 8px 12px;
+      width: 120px;
+      height:30px;
+      margin-bottom: 30px;
+      margin-top:200px;
+      justify-content:center;
+    
+
+
+    }
+
+
+    .colorgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      gap: 20px;
+    }
+
+    .colorbox {
+      width: 120px;
+      height: 80px;
+      border: 1px black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .colorbox span {
+      margin-top: 100px;
+      color: white;
+      font-size: 15px;
+
+
+      
+    }
+
+    .red { background-color:#ff6500 ; }
+    .orange { background-color:#ff7b00 ; }
+    .yellow { background-color:#ff9000; }
+    .green { background-color: #ffa500 ; }
+    .blue { background-color:#ffba00 ; }
+    .violet { background-color: #ffd000; }
+
+
+      
+
+    .back{
+       margin-right: 900px;
+        width:10%;
+        font-size :20px ;
+        background-color:#00ff73 ;
+    }
+  </style>
+</head>
+<body>
+     <button class="back"><a href="main.html">back</a></button>
+  <div class="searchbar">
+   <h1>ORANGE</h1>
+  </div>
+
+  <div class="colorgrid">
+   
+    <button class="colorbox red">#ff6500</button> 
+    <button class="colorbox orange">#ff7b00</button>
+    <button class="colorbox yellow">#ff9000</button>
+    <button class="colorbox green">#ffa500 </button>
+    <button class="colorbox blue">#ffba00</button>
+    <button class="colorbox violet">#ffd000</button>
+  </div>
+</body>
+</html>
